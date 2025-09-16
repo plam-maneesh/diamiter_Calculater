@@ -1,6 +1,6 @@
 function calculateDiameter() {
-  const capacityLiters = document.getElementById("capacity").value;
-  const inputHeight = document.getElementById("height").value;
+   const capacityLiters = parseFloat(document.getElementById("capacity").value);
+  const inputHeight = parseFloat(document.getElementById("height").value);
   const inputDiameter = parseFloat(document.getElementById("diameter").value);
   const resultDiv = document.getElementById("result");
     document.getElementById("formContainer").classList.add("hidden");
@@ -84,9 +84,5 @@ function calculateDiameter() {
 function resetForm() {
   document.getElementById("formContainer").classList.remove("hidden");
   document.getElementById("resultContainer").classList.add("hidden");
-  // Clear inputs
-  document.getElementById("capacity").value = "";
-  document.getElementById("height").value = "";
-  document.getElementById("diameter").value = "";
-  document.getElementById("result").innerHTML = "";
+ 
 }
