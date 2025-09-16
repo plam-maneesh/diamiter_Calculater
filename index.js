@@ -84,5 +84,9 @@ function calculateDiameter() {
 function resetForm() {
   document.getElementById("formContainer").classList.remove("hidden");
   document.getElementById("resultContainer").classList.add("hidden");
+  document.getElementById("capacity").value = "";
+  document.getElementById("height").value = "";
+  document.getElementById("diameter").value = "";
+  document.getElementById("result").innerHTML = "";
  
 }
