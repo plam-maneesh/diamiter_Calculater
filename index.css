@@ -1,0 +1,197 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  width: 350px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 15px;
+  width: 100%;
+  background: #0078d7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #005bb5;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #222;
+}
+
+.container {
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  width: 350px;
+  max-width: 90%;  /* makes sure it doesn’t overflow on small screens */
+  text-align: center;
+}
+
+
+
+
+/* 📱 Mobile (small screens) */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    width: 100%;
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  input, button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  #result {
+    font-size: 14px;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 100%;       /* take full screen width */
+    padding: 15px;     /* less padding so it fits better */
+  }
+
+  h2 {
+    font-size: 20px;   /* smaller heading for small screens */
+  }
+
+  input, button {
+    font-size: 14px;   /* smaller text size */
+    padding: 8px;      /* smaller buttons */
+  }
+
+  #result {
+    font-size: 14px;
+  }
+}
+
+
+/* 📟 Tablet (medium screens) */
+@media (min-width: 601px) and (max-width: 900px) {
+  .container {
+    width: 70%;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  input, button {
+    font-size: 15px;
+  }
+    #result {
+        font-size: 15px;
+    }
+
+
+
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .container {
+    width: 70%;        /* use 70% of screen (not too wide, not too narrow) */
+  }
+
+  h2 {
+    font-size: 22px;   /* slightly bigger heading */
+  }
+
+  input, button {
+    font-size: 15px;   /* readable size */
+  }
+}
+
+
+
+/* 💻 Desktop (large screens) */
+@media (min-width: 901px) {
+  .container {
+    width: 400px;
+  }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    input, button {
+        font-size: 16px;
+    }
+    #result {
+        font-size: 16px;
+    }
+    
+
+}
+
+
+@media (min-width: 901px) {
+  .container {
+    width: 400px;      /* fixed width for desktop view */
+  }
+
+    h2 {
+        font-size: 24px;   /* larger heading */
+    }
+    
+    input, button {
+        font-size: 16px;   /* standard readable size */
+    }
+    
+    
+    #result {
+        font-size: 16px;   /* standard readable size */
+    }
+
+
+}
