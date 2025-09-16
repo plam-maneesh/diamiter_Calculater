@@ -8,7 +8,7 @@ body {
   margin: 0;
 }
 
-.container {
+.container .result{
   background: #fff;
   padding: 20px 30px;
   border-radius: 10px;
@@ -45,10 +45,58 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+  box-sizing: border-box; /* ensures padding doesn’t increase width */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* modern font */
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1); /* subtle shadow for better appearance */
+  text-align: center; /* center text */
+  line-height: 1.4; /* improves readability */
+  transition: all 0.3s ease; /* smooth transition for responsiveness */
+  max-width: 100%; /* ensures it doesn’t overflow the container */
+  overflow-wrap: break-word; /* ensures long words break to avoid overflow */
+  white-space: pre-wrap; /* preserves whitespace and line breaks */
+  font-size: 16px; /* standard readable size */
+  font-weight: bold; /* makes button text stand out */
+  letter-spacing: 0.5px; /* improves readability */
+  text-transform: uppercase; /* makes button text uppercase */
+  background-color: #0078d7; /* primary blue color */
+  border: 1px solid #005bb5; /* darker border for contrast */
+  padding: 12px; /* consistent padding */
+  border-radius: 6px; /* rounded corners */
+  cursor: pointer; /* pointer cursor on hover */
+  box-sizing: border-box; /* ensures padding doesn’t increase width */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* modern font */
+  text-align: center; /* center text */
+  line-height: 1.4; /* improves readability */
+  transition: all 0.3s ease; /* smooth transition for responsiveness */
+  max-width: 100%; /* ensures it doesn’t overflow the container */
+  overflow-wrap: break-word; /* ensures long words break to avoid overflow */
+  white-space: pre-wrap; /* preserves whitespace and line breaks */
+  font-size: 16px; /* standard readable size */
+  font-weight: bold; /* makes button text stand out */
+  letter-spacing: 0.5px; /* improves readability */
+  text-transform: uppercase; /* makes button text uppercase */
+  background-color: #0078d7; /* primary blue color */
+  border: 1px solid #005bb5; /* darker border for contrast */
+  padding: 12px; /* consistent padding */
+  border-radius: 6px; /* rounded corners */
+  cursor: pointer; /* pointer cursor on hover */
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1); /* subtle shadow for better appearance */
+  text-align: center; /* center text */
+  line-height: 1.4; /* improves readability */
+  transition: all 0.3s ease; /* smooth transition for responsiveness */
+  max-width: 100%; /* ensures it doesn’t overflow the container */
+  overflow-wrap: break-word;
 }
+
+
 
 button:hover {
   background: #005bb5;
+  
+
+
 }
 
 #result {
@@ -56,6 +104,45 @@ button:hover {
   font-size: 16px;
   font-weight: bold;
   color: #222;
+  word-wrap: break-word; /* ensures long text wraps within the container */
+  box-sizing: border-box; /* ensures padding doesn’t increase width */
+  padding: 10px; /* adds padding for better readability */
+  border: 1px solid #ccc; /* light border for better visibility */
+  border-radius: 5px; /* rounded corners */
+  background-color: #f9f9f9; /* light background for contrast */
+  text-align: center; /* center text */
+  width: 100%; /* ensures it takes full width of the container */
+}
+
+button:hover {
+  background: #005bb5;
+
+
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #222;
+  word-wrap: break-word; /* ensures long text wraps within the container */
+  box-sizing: border-box; /* ensures padding doesn’t increase width */
+  padding: 10px; /* adds padding for better readability */
+  border: 1px solid #ccc; /* light border for better visibility */
+  border-radius: 5px; /* rounded corners */
+  background-color: #f9f9f9; /* light background for contrast */
+  text-align: center; /* center text */
+  width: 100%; /* ensures it takes full width of the container */
+  overflow-wrap: break-word; /* ensures long words break to avoid overflow */
+  white-space: pre-wrap; /* preserves whitespace and line breaks */
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1); /* subtle shadow for better appearance */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* modern font */
+  line-height: 1.4; /* improves readability */
+  transition: all 0.3s ease; /* smooth transition for responsiveness */
+  max-width: 100%; /* ensures it doesn’t overflow the container */
+  box-sizing: border-box; /* ensures padding doesn’t increase width */
+
+
 }
 
 .container {
@@ -65,7 +152,43 @@ button:hover {
   width: 350px;
   max-width: 90%;  /* makes sure it doesn’t overflow on small screens */
   text-align: center;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  box-sizing: border-box; /* ensures padding doesn’t increase width */
+  transition: all 0.3s ease; /* smooth transition for responsiveness */
+  margin: 10px; /* space around container */
+  position: relative; /* for positioning child elements if needed */
+  overflow: hidden; /* prevents overflow issues */
+  font-size: 16px; /* base font size */
+  line-height: 1.5; /* improves readability */
+  color: #333; /* default text color */
+  background-color: #ffffff; /* white background */
+
+  border: 1px solid #ddd; /* light border */
+  box-shadow: 0 2px 4px rgba(0,0,0
+,0.1); /* subtle shadow */
+
+  padding: 20px; /* consistent padding */
+  border-radius: 8px; /* rounded corners */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* modern font */
+  text-align: center; /* center text */
+  box-sizing: border-box; /* ensures padding doesn’t increase width */
+  transition: all 0.3s ease; /* smooth transition for responsiveness */
+
+
+
+
 }
+
+
+.hidden{
+  display: none;
+}
+
+
+
+
+
+
 
 
 
@@ -76,9 +199,12 @@ button:hover {
     padding: 10px;
   }
 
-  .container {
+  .container .result {
     width: 100%;
     padding: 15px;
+    box-sizing: border-box; /* ensures padding doesn’t increase width */
+    font-size: 14px;
+
   }
 
   h2 {
@@ -88,10 +214,16 @@ button:hover {
   input, button {
     font-size: 14px;
     padding: 8px;
+    box-sizing: border-box; /* ensures padding doesn’t increase width */
+    margin-top: 10px;
+
+    
   }
 
   #result {
     font-size: 14px;
+    word-wrap: break-word; /* ensures long text wraps within the container */
+    box-sizing: border-box; /* ensures padding doesn’t increase width */
   }
 
 }
