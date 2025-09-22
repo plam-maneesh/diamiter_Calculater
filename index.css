@@ -197,6 +197,8 @@ button:hover {
 @media (max-width: 600px) {
   body {
     padding: 10px;
+
+
   }
 
   .container .result {
@@ -204,11 +206,15 @@ button:hover {
     padding: 15px;
     box-sizing: border-box; /* ensures padding doesn’t increase width */
     font-size: 14px;
+    text-align: center;
+
 
   }
 
   h2 {
     font-size: 20px;
+    margin-bottom: 15px;
+
   }
 
   input, button {
@@ -216,6 +222,8 @@ button:hover {
     padding: 8px;
     box-sizing: border-box; /* ensures padding doesn’t increase width */
     margin-top: 10px;
+    width: 100%; /* ensures full width on small screens */
+
 
     
   }
@@ -224,6 +232,16 @@ button:hover {
     font-size: 14px;
     word-wrap: break-word; /* ensures long text wraps within the container */
     box-sizing: border-box; /* ensures padding doesn’t increase width */
+    padding: 8px; /* adds padding for better readability */
+    width: 100%; /* ensures it takes full width of the container */
+    text-align: center; /* center text */
+    overflow-wrap: break-word; /* ensures long words break to avoid overflow */
+    white-space: pre-wrap; /* preserves whitespace and line breaks */
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.1); /* subtle shadow for better appearance */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* modern font */
+    line-height: 1.4; /* improves readability */
+    transition: all 0.3s ease; /* smooth transition for responsiveness */
+    max-width: 100%; /* ensures it doesn’t overflow the container */
   }
 
 }
