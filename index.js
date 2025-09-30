@@ -15,15 +15,16 @@ the  form container and result container should be in divs and the result contai
 
 
 function calculateDiameter() {
+  //initialize height and diameter variables
+  // why initializing here because we will use them later in the function
+
    const capacityLiters = parseFloat(document.getElementById("capacity").value);
   const inputHeight = parseFloat(document.getElementById("height").value);
   const inputDiameter = parseFloat(document.getElementById("diameter").value);
   const resultDiv = document.getElementById("result");
+
     document.getElementById("formContainer").classList.add("hidden");
   document.getElementById("resultContainer").classList.remove("hidden");
-
-
-
 /* 
 create if else conditions to check if the input values are valid 
 if capacity is not a number or less than or equal to 0 show warning message
